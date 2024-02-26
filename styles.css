@@ -1,0 +1,39 @@
+/* 1)엑셀 앱 만들기 시작 */
+#export-btn {
+    background: #46AB46;
+    color: white;
+    border: none;
+    padding: 10px;
+    display: inline-block;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+/* 8) Cell 스타일 생성하기 */
+.cell-row {
+    display: flex;
+}
+
+.cell {
+    width: 80px;
+    border: 1px solid lightgray;
+    height: 40px;
+    outline: none;
+    box-sizing: border-box;
+}
+/* (자료에는 없음) */
+ .cell:focus {
+    background: #ddd;
+    border: 3px solid lightblue;
+}
+
+.cell.header {
+    text-align: center;
+    background: #add;
+}
+
+/* 17) column header, row header 하이라이트 주기 */
+.cell.header.active {
+    background: lightblue;
+    color: white;
+}
